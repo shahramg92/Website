@@ -47,6 +47,17 @@ h6 {
   top: 23%;
 }
 
+.navbar-nav {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navbar-nav {
+  a {
+    color: white;
+  }
+}
+
 #videocontainer {
   width: 100vw !important;
   /*height: 100vh !important;*/
@@ -293,11 +304,47 @@ header.masthead {
 .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
 
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
 
-.inner {
+.background-footer {
+  height: 100%;
+  background: url(/img/aurora.jpg) no-repeat top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+ul.icons {
   cursor: default;
   list-style: none;
   padding-left: 0;
   display: flex;
   justify-content: center;
+}
+
+.icon-text {
+  /*margin-bottom: -58px !important;*/
+  margin-left: -65px;
+  margin-right: -65px;
+  /*padding-left: 3rem;*/
+  display: inline-block !important;
+}
+
+.nav-item {
+  /*text-align: center !important;*/
+  padding: 0 10px;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+
 }
