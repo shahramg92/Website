@@ -79,6 +79,39 @@ h6 {
   font-size: 30px
 }
 
+@media (min-width: 1200px) {
+  #arcade-pic {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1999px) {
+  #arcade-pic {
+    width: 800px;
+  }
+}
+
+@media (max-width:991px) {
+  #arcade-pic {
+    width: 700px;
+  }
+}
+@media (max-width:767px) {
+
+  #arcade-pic {
+    width: 500px;
+  }
+}
+
+@media (max-width:575px) {
+  #arcade-pic {
+    width: 300px;
+  }
+  #arcade-font {
+    width: 350px;
+  }
+}
+
 section {
   padding: 8rem 0; }
 
@@ -346,5 +379,4 @@ ul.icons {
 #contact {
   display: flex;
   justify-content: center;
-
 }
