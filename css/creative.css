@@ -58,6 +58,13 @@ h6 {
   }
 }
 
+.skill-icons:hover {
+  color: red;
+  grow {transition: all .2s ease-in-out;}
+ { transform: scale(1.5); }
+}
+
+
 #videocontainer {
   width: 100vw !important;
   /*height: 100vh !important;*/
@@ -104,6 +111,9 @@ h6 {
   .text-faded {
     font-size: 20px;
   }
+  .skillz {
+    font-size: 50px;
+  }
 }
 @media (max-width:767px) {
   #arcade-pic {
@@ -111,6 +121,9 @@ h6 {
   }
   .text-faded {
     font-size: 15px;
+  }
+  .skillz {
+    font-size: 30px;
   }
 }
 
@@ -124,6 +137,15 @@ h6 {
   .text-faded {
     font-size: 10px;
   }
+  .skillz {
+    font-size: 20px;
+  }
+}
+
+.skillz {
+  width: 100%;
+  font-size: 80px;
+  margin-bottom: 20px;
 }
 
 section {
@@ -393,4 +415,65 @@ ul.icons {
 #contact {
   display: flex;
   justify-content: center;
+}
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+.portfolio-item .caption .caption-content h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolio-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
 }
