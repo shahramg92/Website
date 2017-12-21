@@ -145,11 +145,13 @@ h6 {
 .skillz {
   width: 100%;
   font-size: 80px;
-  margin-bottom: 20px;
+  padding-bottom: 8rem;
 }
 
-section {
-  padding: 8rem 0; }
+.space-ground {
+  background: url(/img/aurora.jpg) no-repeat top fixed;
+  }
+
 
 .section-heading {
   margin-top: 0; }
