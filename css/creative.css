@@ -378,6 +378,11 @@ header.masthead {
 .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
 
+.card-footer {
+display: flex;
+justify-content: center;
+}
+
 ul.icons {
     cursor: default;
     list-style: none;
