@@ -114,6 +114,9 @@ h6 {
   .skillz {
     font-size: 50px;
   }
+  .card-footer {
+
+  }
 }
 @media (max-width:767px) {
   #arcade-pic {
@@ -379,6 +382,8 @@ header.masthead {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
 
 .card-footer {
+position: relative;
+width: 100%;
 display: flex;
 justify-content: center;
 }
